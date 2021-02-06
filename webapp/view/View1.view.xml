@@ -1,0 +1,90 @@
+<mvc:View controllerName="lg.HTML5Module.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+xmlns="sap.m"
+xmlns:table="sap.ui.table">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+			<table:Table rows="{/}">
+                            <table:columns>
+                                <table:Column
+                                    width="12em">
+                                    <Text text="Product" />
+                                    <table:template>
+                                        <ObjectIdentifier
+                                            title="{Papel}"
+                                            text="{Nome}"/>                                    
+                                    </table:template>
+                                </table:Column>
+                                <table:Column>
+                                    <Text text="Setor" />
+                                    <table:template>
+                                        <Text
+                                                text="{Setor}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column>
+                                    <Text text="Subsetor" />
+                                    <table:template>
+                                        <Text
+                                                text="{Subsetor}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column>
+                                    <Text text="Segmento" />
+                                    <table:template>
+                                        <Text
+                                                text="{Segmento}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="Cotação" />
+                                    <table:template>
+                                        <Text
+                                                text="{Cotacao}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="Mrg.Ebit" />
+                                    <table:template>
+                                        <Text
+                                                text="{Mrg.Ebit}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="Mrg.Liq." />
+                                    <table:template>
+                                        <Text
+                                                text="{Mrg.Liq.}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="P/L" />
+                                    <table:template>
+                                        <Text
+                                                text="{PL}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="P/VP" />
+                                    <table:template>
+                                        <Text
+                                                text="{PVP}" />
+                                    </table:template>                                    
+                                </table:Column>
+                                <table:Column >
+                                    <Text text="Liq.Corr." />
+                                    <table:template>
+                                        <Text
+                                                text="{Liq.Corr.}" />
+                                    </table:template>                                    
+                                </table:Column>                                                                                                                                                                
+                            </table:columns>
+                        </table:Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
