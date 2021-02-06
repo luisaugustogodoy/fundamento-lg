@@ -12,8 +12,7 @@
     "rimraf": "^2.6.2"
   },  
   "scripts": {
-    "start": "ui5 serve --accept-remote-connections true --port $PORT",
-    "build": "npm run clean && npm run zip",
+    "start": "ui5 serve --accept-remote-connections true --port $PORT"
     "zip": "cd dist && npx bestzip ../HTML5Module-content.zip *",
     "clean": "npx rimraf HTML5Module-content.zip dist"
   },
