@@ -6,9 +6,11 @@ xmlns:table="sap.ui.table">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-			<table:Table rows="{/}">
+			<table:Table fixedColumnCount="1" rows="{/}">
                             <table:columns>
                                 <table:Column
+                                    sortProperty="Papel"
+                                    filterProperty="Papel"
                                     width="12em">
                                     <Text text="Product" />
                                     <table:template>
@@ -17,69 +19,77 @@ xmlns:table="sap.ui.table">
                                             text="{Nome}"/>                                    
                                     </table:template>
                                 </table:Column>
-                                <table:Column>
+                                <table:Column sortProperty="Setor" filterProperty="Setor">
                                     <Text text="Setor" />
                                     <table:template>
                                         <Text
                                                 text="{Setor}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column>
+                                <table:Column sortProperty="Subsetor" filterProperty="Subsetor">
                                     <Text text="Subsetor" />
                                     <table:template>
                                         <Text
                                                 text="{Subsetor}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column>
+                                <table:Column sortProperty="Segmento" filterProperty="Segmento">
                                     <Text text="Segmento" />
                                     <table:template>
                                         <Text
                                                 text="{Segmento}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column sortProperty="Cotacao" filterProperty="Cotacao">
                                     <Text text="Cotação" />
                                     <table:template>
                                         <Text
                                                 text="{Cotacao}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column sortProperty="Mrg.Ebit" filterProperty="Mrg.Ebit">
                                     <Text text="Mrg.Ebit" />
                                     <table:template>
                                         <Text
                                                 text="{Mrg.Ebit}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column sortProperty="Mrg.Liq." filterProperty="Mrg.Liq.">
                                     <Text text="Mrg.Liq." />
                                     <table:template>
                                         <Text
                                                 text="{Mrg.Liq.}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column sortProperty="PL" filterProperty="PL">
                                     <Text text="P/L" />
                                     <table:template>
                                         <Text
                                                 text="{PL}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column filterProperty="PVP" sortProperty="PVP">
                                     <Text text="P/VP" />
                                     <table:template>
                                         <Text
                                                 text="{PVP}" />
                                     </table:template>                                    
                                 </table:Column>
-                                <table:Column >
+                                <table:Column filterProperty="Liq.Corr." sortProperty="Liq.Corr.">
                                     <Text text="Liq.Corr." />
                                     <table:template>
                                         <Text
                                                 text="{Liq.Corr.}" />
                                     </table:template>                                    
-                                </table:Column>                                                                                                                                                                
+                                </table:Column>         
+                                <table:Column sortProperty="Div.BrutPat." filterProperty="Div.BrutPat.">
+                                    <Text text="Div.BrutPat." />
+                                    <table:template>
+                                        <Text
+                                                text="{Div.BrutPat.}" />
+                                    </table:template>                                    
+                                </table:Column>         
+                                                                                                                                                                                                                       
                             </table:columns>
                         </table:Table>
                     </content>
