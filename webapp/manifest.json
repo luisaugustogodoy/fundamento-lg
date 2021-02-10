@@ -14,7 +14,13 @@
 		"sourceTemplate": {
 			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
 			"version": "1.40.12"
-		}
+        },
+        "dataSources": {
+            "mainService":{
+                "uri": "https://fund-serv.herokuapp.com/api/products",
+                "type": "JSON"
+            }
+        }
 	},
 	
 	"sap.ui": {
@@ -62,9 +68,8 @@
 				}
             },
             "":{
-                "type": "sap.ui.model.json.JSONModel",
-                "preload": true,
-                "uri":"model/fundamentus_com.json"
+                "dataSource": "mainService",
+                "preload": true
             }
 		},
 		"resources": {
