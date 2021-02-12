@@ -17,7 +17,7 @@
         },
         "dataSources": {
             "mainService":{
-                "uri": "https://fund-serv.herokuapp.com/api/products",
+                "uri": "model/fundamentus_com.json",
                 "type": "JSON"
             }
         }
